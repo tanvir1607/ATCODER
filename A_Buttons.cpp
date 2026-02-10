@@ -11,8 +11,7 @@
 
 //     int a, b;
 //     cin >> a >> b;
-//     if (a < b) swap(a, b);
-//     cout << (a == b ? a + a : a + a - 1) << endl;
+//     cout << (max(a, b) + max(max(a, b) - 1, min(a, b))) << endl;
 
 //     return 0;
 // }
@@ -34,7 +33,9 @@ int main()
 
     int a, b;
     cin >> a >> b;
-    cout << (max(a, b) + max(max(a, b) - 1, min(a, b))) << endl;
+    if (a < b) swap(a, b);
+    cout << (a == b ? a + a : a + a - 1) << endl;
 
     return 0;
 }
+
