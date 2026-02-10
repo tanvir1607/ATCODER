@@ -11,6 +11,11 @@ int main()
 
     int lower, upper;
     cin >> lower >> upper;
+
+    // int ans = 0;
+    // for (int i = lower; i <= upper; i++)
+    //     ans++;
+    // cout << ans << endl;
     cout << (upper >= lower ? upper - lower + 1 : 0) << endl;
 
     return 0;
